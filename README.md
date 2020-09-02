@@ -203,9 +203,9 @@ Now when we type in the  <code>git status</code> command, we get the information
 
 ### 6.4 Overview of a Git Repository
 
-Inside our repository, currently, we have one file (say) which README.md which is committed. Whatever our repository's name is (let's say "demo"), our directory, is the working directory of our git repository. The actual git repository is contained within .git folder which inside our working directory. The .git folder is a special directory that git manages internally.
+Inside our repository, currently, we have one file (say) which README.md which is committed. Whatever our repository's name is (let's say "demo"), our directory, is the working directory of our git repository. The actual git repository is contained within the .git folder inside the current working directory. The .git folder is a special directory that git manages internally.
 
-To get into the .git folder, we have to get into the .git folder using <code>cd .git/</code> command, and when we check the files inside the .git folder using <code>ls -al</code>, we will see that the we will see certain files which are <em>HEAD, branches, config, description, hooks, index, info, logs, objects, refs, etc</em>. These files are not to be changed without the knowledge of how to do so.
+To get into the .git folder, we have to get into the .git folder using <code>cd .git/</code> command, and when we check the files inside the .git folder using <code>ls -al</code>, the user will see certain files which are <em>HEAD, branches, config, description, hooks, index, info, logs, objects, refs, etc</em>. These files are not to be changed without the knowledge of how to do so.
 
 To change our working directory into a normal folder, we can simply remove the .git folder from our working directory, and our directory will simply be a normal folder in our filesystem. To remove the .git folder, we type in <code>rm -rf .git</code> command to (-rf: recursively and forcefully) delete anything that's contained inside the .git folder. When we return to our prompt, we can see in the git bash that now, it knows the fact that we are no longer inside a git repository, we are inside a normal directory, and therefore, the git bash won't show any branch information with the directory we are inside. 
 
@@ -217,7 +217,7 @@ If we simply type in <code>git status</code> into the git bash now, git bash wil
 
 ### 6.5 Initializing a Git Repository w. Existing Files/Project
 
-Now that we've deleted our .git folder, our "demo" folder is no longer a git repository, therefore, to make it a git repository, we first navigate the git bash to the "demo" folder, and just type in <code>git init .</code> command in the git bash, where . means "current folder". It will initialize the git repository inside the current folder. 
+Now that we've deleted our .git folder, our "demo" folder is no longer a git repository, therefore, to make it a git repository, we first navigate the git bash to the "demo" folder, and just type in <code>git init .</code> command in the git bash, where **.** means "current folder". It will initialize the git repository inside the current folder. 
 
 When we type in <code>ls -la</code> in the git bash, we can see that now our "demo" folder contains the .git folder and therefore now our current working directory has become a git repository.
 
